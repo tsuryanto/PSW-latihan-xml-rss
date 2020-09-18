@@ -54,7 +54,7 @@
                   <a href="index.html" class="nav-link text-left">Home</a>
                 </li>
                 <li>
-                  <a href="categories.html" class="nav-link text-left">Nama Kelompok</a>
+                  <a href="#foo" class="nav-link text-left">Nama Kelompok</a>
                 </li>
               </ul>                    
             </nav>
@@ -69,7 +69,7 @@
 
 <?php
 	$xml = simplexml_load_file ("https://lapi.kumparan.com/v2.0/rss/");
-	// var_dump($xml->channel->item->attributes->url);
+	// var_dump($xml->channel->item);
 	$itemData = $xml->channel->item;
 ?>
 	
@@ -136,7 +136,7 @@
 
 
     
-    <div class="footer">
+    <div class="footer" id="foo">
       <div class="container">
         <div class="row">
           <div class="col-12">
